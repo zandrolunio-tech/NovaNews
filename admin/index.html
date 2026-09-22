@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>NovaNews - Admin</title>
+
+    <link rel="stylesheet" href="admin.css">
+</head>
+
+<body>
+
+    <header>
+        <h1>NovaNews</h1>
+        <p>Painel Administrativo</p>
+    </header>
+
+    <main>
+
+        <section class="formulario">
+
+            <h2>Adicionar notícia</h2>
+
+            <form id="newsForm">
+
+                <label>Categoria</label>
+                <select id="category">
+                    <option value="Economia">Economia</option>
+                    <option value="Tecnologia">Tecnologia</option>
+                    <option value="Desporto">Desporto</option>
+                    <option value="Entretenimento">Entretenimento</option>
+                </select>
+
+                <label>Título</label>
+                <input
+                    type="text"
+                    id="title"
+                    placeholder="Título da notícia"
+                >
+
+                <label>Descrição</label>
+                <textarea
+                    id="description"
+                    placeholder="Descrição da notícia"
+                ></textarea>
+
+                <label>Imagem</label>
+                <input
+                    type="text"
+                    id="image"
+                    placeholder="URL da imagem"
+                >
+
+                <label>Autor</label>
+                <input
+                    type="text"
+                    id="author"
+                    placeholder="Nome do autor"
+                >
+
+                <button type="submit">
+                    Adicionar notícia
+                </button>
+
+            </form>
+
+        </section>
+
+
+        <section class="noticias">
+
+            <h2>Notícias</h2>
+
+            <div id="newsList"></div>
+
+        </section>
+
+    </main>
+
+    <script src="admin.js"></script>
+
+</body>
+</html>
